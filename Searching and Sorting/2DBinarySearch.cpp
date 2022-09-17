@@ -12,7 +12,7 @@ bool SearchElement(int brr[][3], int key, int n, int m)
     // col = m
     int s = 0;
     int e = n * m - 1;
-    int mid = s + (e-s);
+    int mid = s + (e-s)/2;
 
     while(s <= e)
     {
@@ -29,7 +29,7 @@ bool SearchElement(int brr[][3], int key, int n, int m)
         {
             e= mid - 1;
         }
-        mid = s + (e-s);
+        mid = s + (e-s)/2;
     }
     return 0;
 }
